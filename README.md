@@ -26,6 +26,9 @@ https://www.youtube.com/watch?v=sGBToTigrNQ
 
 3º Passo: Gravar o programa na placa Arduino Uno usando o arquivo de exemplo: https://github.com/renato-dias-lima/integracao-central-alarme-intelbras-ha/blob/main/monitoramento-central-alarme.ino
 
+O programa para rodar no arduino foi baseado no video do Lenadro, assista ao video para entender melhor o funcionamento: https://www.youtube.com/watch?v=i3eFdYRcZig
+Esse programa pode ser usado no ESP8266 usando a biblioteca para Wifi no lugar da Ethernet.
+
 Obs.: Alterar os parametros conforme a configuração do Home Assistant:
 
 IPAddress ip(192, 168, 1, 198); // IP do Arduino na REDE
