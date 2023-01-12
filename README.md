@@ -8,7 +8,11 @@ Componentes utilizados:
 - Arduino UNO
 - Ethernet Shield W5100
 - 2 Módulo Relé 1 Canal 5V 10A
-- 2 Mini Regulador de Tensão DC Ajustável
+- 2 Mini Regulador de Tensão DC Ajustável(Regulado para saida com 5v)
+
+- Arduino IDE
+- Home Assistant
+- Add-ons Home Assistant: Mosquitto broker
 
 OBS.: Se usar o módulo relé de 12v não precisa do mini regulador de tensão.
 
@@ -16,5 +20,27 @@ OBS.: Se usar o módulo relé de 12v não precisa do mini regulador de tensão.
 - Video ensinando a configurar
 https://www.youtube.com/watch?v=sGBToTigrNQ
 
-2º Montar o esquema usando os componentes.
+2º Passo: Conectar os componentes usando o diagrama como base.
 
+![alt esquema eletrico](https://github.com/renato-dias-lima/integracao-central-alarme-intelbras-ha/blob/main/diagrama-eletrico.jpg)
+
+3º Passo: Gravar o programa na placa Arduino Uno usando o arquivo de exemplo: https://github.com/renato-dias-lima/integracao-central-alarme-intelbras-ha/blob/main/monitoramento-central-alarme.ino
+
+Obs.: Alterar os parametros conforme a configuração do Home Assistant:
+
+IPAddress ip(192, 168, 1, 198); // IP do Arduino na REDE
+
+//Informações do Servidor MQTT
+const char* mqttuser = "";
+const char* mqttpass = "";
+IPAddress serverMqtt(192, 168, 1, 199); // Ip do Home Assistant para conectar o MQTT
+
+4º Passo: Ligar o Arduino Uno na rede e fonte de alimentação para testar a integração.
+
+![alt projeto](https://github.com/renato-dias-lima/integracao-central-alarme-intelbras-ha/blob/main/projeto-finalizado.jpeg)
+
+5º Passo: Verificar se aparece a entidade no Home Assitant
+
+![alt projeto](https://github.com/renato-dias-lima/integracao-central-alarme-intelbras-ha/blob/main/entidade-home-assistant.png)
+
+Com a entidade é possível adicionar o card na dashboard para exibir o status do alarme e criar rotinas.
