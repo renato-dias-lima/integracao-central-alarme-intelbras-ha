@@ -41,6 +41,8 @@ IPAddress serverMqtt(192, 168, 1, 199); // Ip do Home Assistant para conectar o 
 4º Passo: Ligar o Arduino Uno na rede e fonte de alimentação para testar a integração.
 
 ![alt projeto](https://github.com/renato-dias-lima/integracao-central-alarme-intelbras-ha/blob/main/projeto-finalizado.jpeg)
+* Usei uma caixa que sobrou da instalação do alarme para colocar alguns componentes.
+* Usei o arduino com placa de rede porque o sinal do Wifi aonde fica a central de alarme é fraco.
 
 5º Passo: Verificar se aparece a entidade no Home Assitant
 
