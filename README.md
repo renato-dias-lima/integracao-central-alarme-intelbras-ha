@@ -11,6 +11,7 @@ Componentes utilizados:
 - 2 Mini Regulador de Tensão DC Ajustável(Regulado para saida com 5v)
 
 - Arduino IDE
+- Biblioteca PubSubClient para Arduino
 - Home Assistant
 - Add-ons Home Assistant: Mosquitto broker
 
