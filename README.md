@@ -15,7 +15,7 @@ Componentes utilizados:
 - Home Assistant
 - Add-ons Home Assistant: Mosquitto broker
 
-OBS.: Se usar o módulo relé de 12v não precisa do mini regulador de tensão.
+OBS.: Se usar o módulo relé de 12v não precisa do mini regulador de tensão. É possível fazer sem o relé ligando direto no arduino ou ESP8266, mas usei o relé para manter o circuito isolado.
 
 1º Passo: Configurar as portas PGM da central de Alarme:
 - Video ensinando a configurar
